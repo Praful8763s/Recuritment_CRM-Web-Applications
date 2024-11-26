@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Sourcing Extension{% endblock %}
+
+{% block content %}
+<div class="sourcing-extension">
+    <h1 class="mb-4">LinkedIn Sourcing Extension</h1>
+    <div class="card">
+        <div class="card-body">
+            <div class="candidate-info mb-4">
+                <h3>Candidate Information</h3>
+                <form id="candidateForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" name="full_name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Current Position</label>
+                                <input type="text" class="form-control" name="position">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">LinkedIn URL</label>
+                                <input type="url" class="form-control" name="linkedin_url">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Notes</label>
+                        <textarea class="form-control" name="notes" rows="3"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">Import Candidate</button>
+                        <button type="button" class="btn btn-outline-secondary">Save as Draft</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
